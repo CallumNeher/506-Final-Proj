@@ -3,6 +3,9 @@
 Project Goal:
 This project will aim to use Sea Surface Temperature (SST) data to predict global precipitation regimes and patterns.
 
+Midterm Report:
+https://youtu.be/0-HZHN9D2dY
+
 Data:
 This project will use SST data (likely NOAA Optimum Interpolation Sea Surface Temperature) and ERA5 recalculated total precipitation data. This data is available online through Google Earth Engine and the UN Climate Data Store. 
 
