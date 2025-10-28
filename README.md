@@ -17,7 +17,3 @@ We will be able to plot time series' of the outputs of the auto-encoders against
 
 Testing:
 We can benchmark our model against already existing predictors for precipitation such as El Nino / Pacific Decadal Oscillation indices. Our model should theoretically be a better predictor of global rainfall patterns than these already documented climate drivers.
-
-Data:
-Website: 'https://psl.noaa.gov/data/gridded/data.noaa.oisst.v2.html'
-File Name: '/Datasets/noaa.oisst.v2/sst.mnmean.nc'
