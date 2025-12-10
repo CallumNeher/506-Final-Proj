@@ -13,7 +13,7 @@ Dataset: https://drive.google.com/drive/folders/18DcgugC5LcuNE1-OO0xp7ciMe6q937V
 
 ### Correlations of Latent Time Series to Each Pixel's Time Series
 
-<img style="height:50%; width:auto;" alt="Latent Corrs 2d Final" src="https://github.com/user-attachments/assets/345c7543-11d2-4cac-9678-eea181d12faf" />
+<img style="height:25%; width:auto;" alt="Latent Corrs 2d Final" src="https://github.com/user-attachments/assets/345c7543-11d2-4cac-9678-eea181d12faf" />
 
 ### Gradients of Decoder Layer to Latent Layer: Represents shifting Spatial Loadings
 
