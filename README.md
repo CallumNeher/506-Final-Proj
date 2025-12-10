@@ -1,8 +1,29 @@
 # The E.N.S.O Reconstruction Project:
 ### Using variatiational auto-encoders to reconstruct the El Niño Southern Oscillation
 *insert project intro here*
-
 Dataset: https://drive.google.com/drive/folders/18DcgugC5LcuNE1-OO0xp7ciMe6q937VP?usp=drive_link
+
+### 2 Dimensional Latent Space Visualization
+
+<img width="561" height="455" alt="Latent Space 2d Final" src="https://github.com/user-attachments/assets/c3b167dc-c0bd-4212-8f6b-4a4363f0a366" />
+
+### Latent Time Series
+
+<img width="2011" height="1511" alt="Latent TS 2d final" src="https://github.com/user-attachments/assets/cd529089-6dfb-47b1-b4b1-53fcdf7f4527" />
+
+### Correlations of Latent Time Series to Each Pixel's Time Series
+
+<img width="1009" height="1511" alt="Latent Corrs 2d Final" src="https://github.com/user-attachments/assets/345c7543-11d2-4cac-9678-eea181d12faf" />
+
+### Gradients of Decoder Layer to Latent Layer: Represents shifting Spatial Loadings
+
+https://github.com/user-attachments/assets/33811ffa-b3fc-43c6-a656-9611a52b2064
+
+
+
+
+
+
 
 
 ## How to Build and Use the Code
