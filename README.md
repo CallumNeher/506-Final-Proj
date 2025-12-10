@@ -1,7 +1,2 @@
-# 506-Final-Proj
-***Project Proposal***
-Project Goal:
-This project will aim to use Sea Surface Temperature (SST) data to predict global precipitation regimes and patterns.
+Data: https://drive.google.com/drive/folders/18DcgugC5LcuNE1-OO0xp7ciMe6q937VP?usp=drive_link
 
-
-=
