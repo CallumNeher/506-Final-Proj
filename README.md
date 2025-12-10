@@ -9,7 +9,7 @@ Dataset: https://drive.google.com/drive/folders/18DcgugC5LcuNE1-OO0xp7ciMe6q937V
 
 ### Latent Time Series and ENSO Time Series
 
-<img width="2011" height="1511" alt="Latent TS 2d final" src="https://github.com/user-attachments/assets/cd529089-6dfb-47b1-b4b1-53fcdf7f4527" />
+<img width="50%" height="50%" alt="Latent TS 2d final" src="https://github.com/user-attachments/assets/cd529089-6dfb-47b1-b4b1-53fcdf7f4527" />
 
 ### Correlations of Latent Time Series to Each Pixel's Time Series
 
