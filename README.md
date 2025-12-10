@@ -20,7 +20,9 @@ Dataset: https://drive.google.com/drive/folders/18DcgugC5LcuNE1-OO0xp7ciMe6q937V
 
 ### Gradients of Decoder Layer to Latent Layer: Represents shifting Spatial Loadings
 <p align="center">
+  
   https://github.com/user-attachments/assets/33811ffa-b3fc-43c6-a656-9611a52b2064
+  
 </p>
 
 
