@@ -4,21 +4,21 @@
 Dataset: https://drive.google.com/drive/folders/18DcgugC5LcuNE1-OO0xp7ciMe6q937VP?usp=drive_link
 
 ### 2 Dimensional Latent Space Visualization
-
-<img width="561" height="455" alt="Latent Space 2d Final" src="https://github.com/user-attachments/assets/c3b167dc-c0bd-4212-8f6b-4a4363f0a366" />
-
+<p align="center">
+  <img width="561" height="455" alt="Latent Space 2d Final" src="https://github.com/user-attachments/assets/c3b167dc-c0bd-4212-8f6b-4a4363f0a366" />
+</p>
 ### Latent Time Series and ENSO Time Series
-
-<img width="50%" height="50%" alt="Latent TS 2d final" src="https://github.com/user-attachments/assets/cd529089-6dfb-47b1-b4b1-53fcdf7f4527" />
-
+<p align="center">
+  <img width="50%" height="50%" alt="Latent TS 2d final" src="https://github.com/user-attachments/assets/cd529089-6dfb-47b1-b4b1-53fcdf7f4527" />
+</p>
 ### Correlations of Latent Time Series to Each Pixel's Time Series
-
-<img width="50%" height="50%" alt="Latent Corrs 2d Final" src="https://github.com/user-attachments/assets/345c7543-11d2-4cac-9678-eea181d12faf" />
-
+<p align="center">
+  <img width="50%" height="50%" alt="Latent Corrs 2d Final" src="https://github.com/user-attachments/assets/345c7543-11d2-4cac-9678-eea181d12faf" />
+</p>
 ### Gradients of Decoder Layer to Latent Layer: Represents shifting Spatial Loadings
-
-https://github.com/user-attachments/assets/33811ffa-b3fc-43c6-a656-9611a52b2064
-
+<p align="center">
+  https://github.com/user-attachments/assets/33811ffa-b3fc-43c6-a656-9611a52b2064
+</p>
 
 
 
