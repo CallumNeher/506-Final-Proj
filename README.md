@@ -106,6 +106,8 @@ make test
 
 The notebook handles all data downloading, training, and model saving internally.
 
-
+## Next Steps:
+We really would like for someone to feed the data sequentially through a reccurssive neural network in 
+order to create time stepdepencies. 
 
 
