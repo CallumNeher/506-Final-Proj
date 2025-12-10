@@ -31,7 +31,7 @@ Dataset: https://drive.google.com/drive/folders/18DcgugC5LcuNE1-OO0xp7ciMe6q937V
 
 
 
-## How to Build and Use the Code
+# How to Build and Use the Code
 This project uses a Makefile to automate installation, building, and execution.
 
 #### Clone the repository
@@ -106,8 +106,8 @@ make test
 
 The notebook handles all data downloading, training, and model saving internally.
 
-## Next Steps:
+# Next Steps:
 We really would like for someone to feed the data sequentially through a reccurssive neural network in 
-order to create time stepdepencies. 
+order to create time step depencies. 
 
 
