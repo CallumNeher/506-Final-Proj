@@ -7,7 +7,7 @@ Dataset: https://drive.google.com/drive/folders/18DcgugC5LcuNE1-OO0xp7ciMe6q937V
 
 <img width="561" height="455" alt="Latent Space 2d Final" src="https://github.com/user-attachments/assets/c3b167dc-c0bd-4212-8f6b-4a4363f0a366" />
 
-### Latent Time Series
+### Latent Time Series and ENSO Time Series
 
 <img width="2011" height="1511" alt="Latent TS 2d final" src="https://github.com/user-attachments/assets/cd529089-6dfb-47b1-b4b1-53fcdf7f4527" />
 
@@ -81,8 +81,8 @@ This will:
 
 #### Dependencies Installed Automatically
 The `make build` step installs the following:
-torch, torchvision, array, numpy, pandas, matplotlib, moviepy, xeofs, netCDF4, down, papermill,
-jupyter, jupyterlab  
+torch, torchvision, array, numpy, pandas, matplotlib, moviepy, xeofs, 
+netCDF4, down, papermill, jupyter, jupyterlab  
 
 #### Hardware
 - CPU-only systems fully supported  
