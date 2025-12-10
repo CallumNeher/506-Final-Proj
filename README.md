@@ -1,25 +1,26 @@
 # The E.N.S.O Reconstruction Project:
 ### Using variatiational auto-encoders to reconstruct the El Niño Southern Oscillation
 *insert project intro here*
+
 Dataset: https://drive.google.com/drive/folders/18DcgugC5LcuNE1-OO0xp7ciMe6q937VP?usp=drive_link
 
 
 ## How to Build and Use the Code
 This project uses a Makefile to automate installation, building, and execution.
 
-### 1. Clone the repository
+#### Clone the repository
 ```bash
 git clone <your-repo-url>
 cd <your-repo-name>
 ```
 
-### Build the project
+#### Build the project
 Installs all required dependencies:
 ```bash
 make build
 ```
 
-### Run the project
+#### Run the project
 Executes the main Jupyter notebook using papermill:
 ```bash
 make run
@@ -33,7 +34,7 @@ which contains all executed notebook results, plots, and model outputs.
 
 ---
 
-### How to Test the Code
+#### How to Test the Code
 
 Run the automated model load test:
 ```bash
@@ -49,27 +50,27 @@ This will:
 
 ### Supported Environment
 
-### Operating Systems
+#### Operating Systems
 - Linux (Ubuntu recommended)
 - macOS
 - Windows 10/11 via WSL2
 
-### Python Version
+#### Python Version
 - Python 3.10+
 
-### Dependencies Installed Automatically
+#### Dependencies Installed Automatically
 The `make build` step installs the following:
 torch, torchvision, array, numpy, pandas, matplotlib, moviepy, xeofs, netCDF4, down, papermill,
 jupyter, jupyterlab  
 
-### Hardware
+#### Hardware
 - CPU-only systems fully supported  
 - GPU optional
 - Collab, Local, Jupyter Notebooks Supported
 
 ---
 
-###Summary
+#### Summary
 
 ```bash
 make build
