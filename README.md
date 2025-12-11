@@ -1,5 +1,9 @@
 # The E.N.S.O Reconstruction Project:
-### Using variatiational auto-encoders to reconstruct Sea Surface Temperature and isolate El Niño Southern Oscillation
+
+## Using A Variatiational Autoencoder to Reconstruct Sea Surface Temperature and Isolate El Niño Southern Oscillation
+
+Youtube Explanation: https://youtu.be/AiFCUWa-z7s
+
 
 # How to Build and Use the Code
 This project uses a Makefile to automate installation, building, and execution.
@@ -76,7 +80,7 @@ make test
 
 The notebook handles all data downloading, training, and model saving internally.
 
-### Project Explanation:
+# Project Explanation:
 
 Youtube Explanation: https://youtu.be/AiFCUWa-z7s
 
@@ -84,20 +88,20 @@ Dataset: https://drive.google.com/drive/folders/18DcgugC5LcuNE1-OO0xp7ciMe6q937V
 
 NASA data access: https://psl.noaa.gov/data/gridded/data.noaa.oisst.v2.html 
 
-#### Dataset Description:
+## Dataset Description:
 
 We are using 40 years of monthly sea surface temperature data. Our data is at 1 degree spatial resolution and has global coverage. The SSTs have been detrended and centered. They are available in the state we use them at the google drive link above.
 
-#### Methods:
+## Methods:
 
 We use a variational autoencoder (VAE) to reconstruct SST data. The encoder of the VAE takes a single image of SST data as a vector, and compresses it down to 2 latent dimensions. The decoder then reconstructs the full image from this 2 dimensional latent vector. After training our VAE we can create latent dimension time series by passing our SST images sequentially through just the encoder. Each time step will be a 2 dimensionsl vector, and we can separate this out into 2 latent time series.
 
-#### Latent Time Series and ENSO Time Series
+### Latent Time Series and ENSO Time Series
 <p align="center">
   <img width="50%" height="50%" alt="Latent TS 2d final" src="https://github.com/user-attachments/assets/cd529089-6dfb-47b1-b4b1-53fcdf7f4527" />
 </p>
 
-#### 2 Dimensional Latent Space Visualization
+### 2 Dimensional Latent Space Visualization
 
 We can also directly visualize the latent vectors. In the plot below we have plotted the latent vectors for each time point, and colored each point based on the value of the ENSO 3.4 index at that time point. The latent space is able to separate extreme phases of ENSO from one another in the latent space. 
 
@@ -107,7 +111,7 @@ We can also directly visualize the latent vectors. In the plot below we have plo
 
 
 
-#### Correlations of Latent Time Series to Each Pixel's Time Series
+### Correlations of Latent Time Series to Each Pixel's Time Series
 
 Next we can calculate the pixel-wise correlation between the time series at each pixel and each of our latent time series from above. This will show us which pixels have time series that are most similar to the ones from our latent space. This allows us to see which regions of the ocean are being most captured by our latent time series. 
 
@@ -115,7 +119,7 @@ Next we can calculate the pixel-wise correlation between the time series at each
   <img width="50%" height="50%" alt="Latent Corrs 2d Final" src="https://github.com/user-attachments/assets/345c7543-11d2-4cac-9678-eea181d12faf" />
 </p>
 
-#### Gradients of Decoder Layer to Latent Layer: Represents shifting Spatial Loadings
+### Gradients of Decoder Layer to Latent Layer: Represents shifting Spatial Loadings
 
 Here, we calculate the gradient of the final decoder layer with respect to the latent layer at each pixel, for each time step. This shows us how SSTs are changing over time. We are able to see an oscillation of gradients along the ENSO corridor in the tropical pacific. This mimics the actual shift of colder and warmer water back and forth during ENSO events. On the left is the map of shifting gradients, and the right is the first latent time series from before (with a moving indicator of which part of the time series we are on). 
 
@@ -125,7 +129,7 @@ Here, we calculate the gradient of the final decoder layer with respect to the l
   
 </p>
 
-### Comparisons to Linear PCA
+## Comparisons to Linear PCA
 
 Our latent time series can also be thought of as a dimensionality reduction of our overall SST data. Our hypothesis when starting this project is that a VAE would be able to better model SST data than pure linear Principal Component Analysis. To test this we must compare the two versions of dimensionality reduction. Here are the first 2 Principal Components of our SST data:
 
