@@ -3,7 +3,7 @@ import os
 import gdown
 
 MODEL_PATH = "trained_vae.pth"
-DRIVE_ID = "https://drive.google.com/drive/folders/18DcgugC5LcuNE1-OO0xp7ciMe6q937VP?usp=drive_link"
+DRIVE_ID = "1gpWVgSbh27vD8rPPfR-HiBt7egmCNNil"
 
 def main():
     if os.path.exists(MODEL_PATH):
