@@ -14,22 +14,17 @@ install:
 	$(PYTHON) -m pip install moviepy netCDF4 gdown
 	$(PYTHON) -m pip install papermill
 
-
 # BUILD STEP (no dataset handling)
-
 build: install
 	@echo "Build complete (notebook handles all data)."
 
-
 # RUN THE NOTEBOOK 
-
 run:
 	papermill $(NOTEBOOK) $(OUTPUT_NOTEBOOK)
 	@echo "Notebook executed successfully."
 
 # TEST STEP
 # Looks for ANY *.pt or *.pth file created by the notebook
-
 test:
 	$(PYTHON) - << 'EOF'
 import glob
