@@ -129,7 +129,9 @@ Here, we calculate the gradient of the final decoder layer with respect to the l
 
 Our latent time series can also be thought of as a dimensionality reduction of our overall SST data. Our hypothesis when starting this project is that a VAE would be able to better model SST data than pure linear Principal Component Analysis. To test this we must compare the two versions of dimensionality reduction. Here are the first 2 Principal Components of our SST data:
 
-<img width="80%" height="80%" alt="Linear PCA Comparison" src="https://github.com/user-attachments/assets/f3bb9591-8f4e-4d37-9feb-c7e4ac9a3b67" />
+<p align="center">
+  <img width="80%" height="80%" alt="Linear PCA Comparison" src="https://github.com/user-attachments/assets/f3bb9591-8f4e-4d37-9feb-c7e4ac9a3b67" />
+</p>
 
 Linear PCA has the advantage that all PCs are orthgonal to one another, which forces PCA to capture different modes of variability in SST data. Our latent space in the VAE doesn't have any such constraint, as a result the two latent time series seem to be capturing very similar patterns of variability. This is in contrast to the two principal components above, which clearly capture 2 different modes of variability in SSTs.
 
