@@ -14,7 +14,7 @@ install:
 	$(PYTHON) -m pip install moviepy netCDF4 gdown
 	$(PYTHON) -m pip install papermill
 
-# BUILD STEP (no dataset handling)
+# BUILD STEP
 build: install
 	@echo "Build complete (notebook handles all data)."
 
@@ -24,13 +24,11 @@ run:
 	@echo "Notebook executed successfully."
 
 # TEST STEP
-# Looks for ANY *.pt or *.pth file created by the notebook
 test:
 	$(PYTHON) - << 'EOF'
 import glob
 import torch
 
-# Search for model files anywhere in the repo
 candidates = glob.glob("**/*.pt", recursive=True) + glob.glob("**/*.pth", recursive=True)
 
 if not candidates:
@@ -38,13 +36,12 @@ if not candidates:
 
 print("Model files found:", candidates)
 
-# Try loading each one safely
 for path in candidates:
     try:
         torch.load(path, map_location="cpu")
         print(f"Loaded successfully: {path}")
     except Exception as e:
-        print(f"Failed to load {path}: {e}")
+        print(f"Failed to load %s: %s" % (path, e))
 
 print("Test completed: model load attempted for all detected files.")
 EOF
@@ -55,3 +52,4 @@ clean:
 	@echo "Clean complete."
 
 .PHONY: install build run test clean
+
