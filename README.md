@@ -1,6 +1,10 @@
 # The E.N.S.O Reconstruction Project:
-### Using variatiational auto-encoders to reconstruct the El Niño Southern Oscillation
-*insert project intro here*
+### Using variatiational auto-encoders to reconstruct Sea Surface Temperature and isolate El Niño Southern Oscillation
+
+### Project Explanation:
+
+https://youtu.be/AiFCUWa-z7s
+
 Dataset: https://drive.google.com/drive/folders/18DcgugC5LcuNE1-OO0xp7ciMe6q937VP?usp=drive_link
 
 ### 2 Dimensional Latent Space Visualization
